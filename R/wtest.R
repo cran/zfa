@@ -1,0 +1,34 @@
+wtest<-function(data,y){
+  y<-as.matrix(y)
+  all.table<-apply(data,2,table.e1,y)
+  sum.table<-matrix(rowSums(all.table),ncol=2)
+  cont.table<-sum.table[rowSums(sum.table)!=0,]
+  rm(all.table,sum.table)
+  if(0 %in% cont.table)
+    cont.table<-cont.table+0.5
+  hf<-matrix(c(0.5,1,0.667,2),nrow=2,ncol=2,byrow=T)
+  result.x2<-x2(cont.table)
+  rm(cont.table)
+  x2.column<-1
+  df.column<-x2.column+1
+  w.value<-result.x2[x2.column]*hf[result.x2[df.column],1]
+  p.value<-pchisq(w.value,df=hf[result.x2[df.column],2],lower.tail=F)
+  result.all<-c(result.x2,w.value,p.value)
+  rm(result.x2)
+  result.wtest<-result.all[4]
+  rm(result.all,w.value,p.value)
+  return(result.wtest)
+}
+
+x2<-function(cont.table){
+  df<-NROW(cont.table)-1
+  o<-cont.table
+  cont.table<-t(t(cont.table)/colSums(cont.table))
+  p<-cont.table/(1-cont.table)
+  OR<-p[,2]/p[,1]
+  o<-cbind(o,t(colSums(o)-t(o)))
+  sd<-sqrt(rowSums(1/o))
+  x2.value=sum((log(OR)/sd)^2)
+  x2.result<-c(x2.value,df)
+  return(x2.result)
+}
