@@ -4,7 +4,8 @@
 \name{zfa.example}
 \alias{zfa.example}
 \title{Example data for zfa}
-\format{The \code{zfa.example} contains the following objects:
+\format{
+The \code{zfa.example} contains the following objects:
 
 \code{X}
 
@@ -12,7 +13,8 @@ a numeric genotype matrix of 1800 individuals and 512 rare variants. Each row re
 
 \code{y}
 
-a numeric vector of binary phenotypes, among which there are 343 cases and 1457 controls.}
+a numeric vector of binary phenotypes, among which there are 343 cases and 1457 controls.
+}
 \usage{
 data(zfa.example)
 }
@@ -23,4 +25,3 @@ Example data for \code{"zfa"} function.
 \code{\link{zfa}}
 }
 \keyword{datasets}
-

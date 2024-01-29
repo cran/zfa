@@ -4,9 +4,16 @@
 \alias{zfa}
 \title{Zoom-Focus Algorithm}
 \usage{
-zfa(data, y, bin = 256, fast.path = TRUE, filter.pval = 0.01,
-  output.pval = 0.05, CommonRare_Cutoff = 0.01, test = c("SKAT", "SKATO",
-  "burden", "wtest"))
+zfa(
+  data,
+  y,
+  bin = 256,
+  fast.path = TRUE,
+  filter.pval = 0.01,
+  output.pval = 0.05,
+  CommonRare_Cutoff = 0.01,
+  test = c("SKAT", "SKATO", "burden", "wtest")
+)
 }
 \arguments{
 \item{data}{a data frame or numeric matrix. Genotypes should be coded as 0,1 or 2.}
@@ -66,9 +73,6 @@ zfa.result2<-zfa(X,y,bin = 32,fast.path = FALSE,filter.pval=0.01,output.pval=0.0
 result1.detail<-zfa.result1$variants
 
 }
-\author{
-Haoyi Weng & Maggie Wang
-}
 \references{
 M. H. Wang., H. Weng., et al. (2017) A Zoom-Focus algorithm (ZFA) to locate the optimal testing region for rare variant association tests. Bioinformatics.
 
@@ -82,4 +86,6 @@ Lee, S., Emond, M.J., et al. (2012) Optimal unified approach for rare variant as
 
 Lee, S., Fuchsberger, C., et al. (2015) An efficient resampling method for calibrating single and gene-based rare variant association analysis in case-control studies. Biostatistics, kxv033.
 }
-
+\author{
+Haoyi Weng & Maggie Wang
+}

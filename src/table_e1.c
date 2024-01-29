@@ -8,7 +8,7 @@ SEXP table_e1(SEXP a, SEXP b)
 
     int i, index = 0, n = GET_LENGTH(a);
     if (n <= 0) {
-        UNPROTECT(1);
+        UNPROTECT(2);
         return R_NilValue;
     }
 

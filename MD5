@@ -1,5 +1,5 @@
-0232ed3b5ead801b05c67e8d7e2d405a *DESCRIPTION
-fe7caf37e36d6a9c32a40c718b8a727f *NAMESPACE
+cfdbf3457c7391b47318a5ba5dfeb660 *DESCRIPTION
+0d4f6cb083282497802520f19b443f18 *NAMESPACE
 d25ff9d4f0b5a70d98ce7856be9f9be9 *R/data.R
 523341c4ff4f3bba6fe9bf7dbd2c21c9 *R/fast.zoom.function.R
 7d5714fb99a81132ec529fcc232c2f37 *R/focus.function.R
@@ -10,7 +10,7 @@ a7b6c624b4144cfcc72eec15cea10868 *R/print.method.R
 0b61c7d2ab268812d0a60759799812a5 *R/wtest.R
 2b3d1edda97aa5ddb467a7e3a06bd4e4 *R/zfa.R
 690067ed9830048061260c8605d90f9e *data/zfa.example.rda
-35df53ee78c93940510ee3d38b7194f1 *man/zfa.Rd
-8749e70a5a11dd3145784c2d594acb38 *man/zfa.example.Rd
+6ec0d858aaaf3b76add1af732cd7283a *man/zfa.Rd
+ba43929c28ae50d8dd283d34c7b02db9 *man/zfa.example.Rd
 1aa95f7f8f5f36c9349d7410207c6e81 *src/registerDynamicSymbol.c
-d32db7165f9c4643d24e7ff9322d1d1d *src/table_e1.c
+a66614762e1a1ad288657831cb40ffb1 *src/table_e1.c
